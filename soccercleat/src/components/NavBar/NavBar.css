@@ -1,0 +1,33 @@
+.nav-bar {
+    z-index: 1000;
+    display: flex;
+    position: absolute;
+    background-color: #439e43;
+    padding: 50px;
+    text-align: center;
+    margin-top: 330px;
+    width: 6044px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    margin-left: 30%;
+}
+
+.nav-bar ul li {
+    display: inline;
+    margin: 0 300px;
+}
+
+.nav-bar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+.nav-bar ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
