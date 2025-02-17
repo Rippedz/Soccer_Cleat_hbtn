@@ -1,4 +1,3 @@
-
 .product {
   background-color: #f6f6f6; /* Fond blanc */
   border-radius: 10px; /* Coins légèrement arrondis */
@@ -6,12 +5,12 @@
   padding: 20px; /* Espace intérieur pour le contenu */
   text-align: center; /* Centrer le contenu */
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition douce sur hover */
-  margin: 50px auto 0 auto;
   z-index: 1000;
+  margin-top: 150%;
 }
 
 .product:hover {
-  transform: translateY(-5px); /* Légère élévation au survol */
+  transform: translateY(-10px); /* Légère élévation au survol */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Accentue l'ombre au survol */
 }
 
@@ -24,7 +23,7 @@
 
 h3 {
   font-size: 5rem; /* Taille de police pour le titre */
-  margin: 5px 0; /* Espacement sous le titre */
+  margin: 5px; /* Espacement sous le titre */
   color: #333; /* Couleur sombre mais pas complètement noire */
 }
 
@@ -33,4 +32,3 @@ p {
   color: #666; /* Couleur gris pour un style léger */
   margin: 0; /* Réduit l'espace en bas du prix */
 }
-
