@@ -1,17 +1,16 @@
 .nav-bar {
     z-index: 1000;
-    display: flex;
     position: absolute;
     background-color: #439e43;
     padding: 50px;
     text-align: center;
     margin-top: 330px;
-    width: 6044px;
+    width: 5970px;
 }
 
 .nav-bar ul {
     list-style: none;
-    margin-left: 30%;
+    margin-left: 0;
 }
 
 .nav-bar ul li {

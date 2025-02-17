@@ -1,27 +1,36 @@
+
 .product {
-  display: absolute;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  background-color: #f8f8f8;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f6f6f6; /* Fond blanc */
+  border-radius: 10px; /* Coins légèrement arrondis */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  padding: 20px; /* Espace intérieur pour le contenu */
+  text-align: center; /* Centrer le contenu */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition douce sur hover */
+  margin: 50px auto 0 auto;
+  z-index: 1000;
+}
+
+.product:hover {
+  transform: translateY(-5px); /* Légère élévation au survol */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Accentue l'ombre au survol */
 }
 
 .product-image {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  margin-bottom: 15px;
+  max-width: 50%; /* Image prend la largeur maximale du conteneur */
+  height: auto; /* Conserver les proportions de l'image */
+  margin-bottom: 5px; /* Espacement en dessous de l'image */
+  border-radius: 8px; /* Coins légèrement arrondis sur l'image */
 }
 
-.product h3 {
-  margin: 10px 0;
-  font-size: 1.2em;
+h3 {
+  font-size: 5rem; /* Taille de police pour le titre */
+  margin: 5px 0; /* Espacement sous le titre */
+  color: #333; /* Couleur sombre mais pas complètement noire */
 }
 
-.product p {
-  font-size: 1.1em;
-  color: #333;
+p {
+  font-size: 5rem; /* Taille de police pour le prix */
+  color: #666; /* Couleur gris pour un style léger */
+  margin: 0; /* Réduit l'espace en bas du prix */
 }
+

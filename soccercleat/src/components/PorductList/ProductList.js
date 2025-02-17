@@ -27,15 +27,16 @@ const products = [
 function ProductList() {
   return (
     <div className="product-list">
-      {products.map(product => (
-        <Product 
-          key={product.id} 
-          image={product.image} 
-          name={product.name} 
-          price={product.price} 
-        />
+      {products.map((product) => (
+        <div key={product.id} className="product-card">
+          <Link to={`/product/${product.id}`} className="product-link">
+            <img src={product.image} alt={product.name} className="product-image" />
+            <h3>{product.name}</h3>
+            <p>{product.price} €</p>
+          </Link>
+        </div>
       ))}
-    </div>
+      </div>
   );
 }
 
