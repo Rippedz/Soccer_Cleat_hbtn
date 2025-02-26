@@ -6,9 +6,7 @@ function Product({ image, name, price }) {
     <div className="product">
       <img src={image} alt={name} className="product-image" />
       <h3>{name}</h3>
-      <p>{price} €</p>
-      <div style={{ background: 'none', minHeight: '100vh' }}>
-    </div>
+      <h4>{price} €</h4>
     </div>
     
   );

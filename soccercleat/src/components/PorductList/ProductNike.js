@@ -1,6 +1,6 @@
 import React from 'react';
 import Product from './Product';
-import './ProductList.css';
+import './ProductNike.css';
 
 import TiempoNoirVisse from '../PorductList/imgNike/TiempoNoirVisse.jpg';
 import TiempoVertSynth from '../PorductList/imgNike/TiempoVertSynth.jpg';
@@ -24,9 +24,9 @@ const products = [
   { id: 9, image: PhanRedMoule , name: 'Nike Phantom GX II Elite FG-PRO - Rouge', price: 260 },
 ];
 
-function ProductList() {
+function ProductNike() {
   return (
-    <div className="product-list">
+    <div className="product-nike">
       {products.map(product => (
         <Product 
           key={product.id} 
@@ -39,4 +39,4 @@ function ProductList() {
   );
 }
 
-export default ProductList;
+export default ProductNike;

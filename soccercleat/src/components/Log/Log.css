@@ -8,16 +8,15 @@
 
 body {
 	background: #f6f5f7;
-	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Montserrat', sans-serif;
-	height: 100vh;
+	z-index: 1000;
 }
 
+
 .container {
-	position: relative;
 	overflow: hidden;
 	min-height: 480px;
 	width: 768px;
@@ -166,7 +165,7 @@ a {
 }
 
 .overlay {
-	background: linear-gradient(to right, #adf0d1, #e7f0fd);
+	background: linear-gradient(to right, #adf0d1, #adf0d1);
 	background: #adf0d1;
 	color: #00203f;
 	position: relative;

@@ -6,7 +6,7 @@
   text-align: center; /* Centrer le contenu */
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition douce sur hover */
   z-index: 1000;
-  margin-top: 150%;
+  margin-top: 500px;
 }
 
 .product:hover {
@@ -30,5 +30,30 @@ h3 {
 p {
   font-size: 5rem; /* Taille de police pour le prix */
   color: #666; /* Couleur gris pour un style léger */
-  margin: 0; /* Réduit l'espace en bas du prix */
+  margin: 10px; /* Réduit l'espace en bas du prix */
+}
+
+.product:hover {
+  transform: translateY(-10px); /* Légère élévation au survol */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Accentue l'ombre au survol */
+}
+
+.product-image {
+  max-width: 50%; /* Image prend la largeur maximale du conteneur */
+  height: auto; /* Conserver les proportions de l'image */
+  margin-bottom: 5px; /* Espacement en dessous de l'image */
+  border-radius: 8px; /* Coins légèrement arrondis sur l'image */
+}
+
+h3 {
+  font-size: 5rem; /* Taille de police pour le titre */
+  margin: 5px; /* Espacement sous le titre */
+  color: #333; /* Couleur sombre mais pas complètement noire */
+}
+
+h4 {
+  resize: none;
+  font-size: 5rem; /* Taille de police pour le prix */
+  color: #666; /* Couleur gris pour un style léger */
+  margin: 5px; /* Réduit l'espace en bas du prix */
 }

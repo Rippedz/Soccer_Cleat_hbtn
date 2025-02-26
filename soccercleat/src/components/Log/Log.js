@@ -64,8 +64,7 @@ function AuthForm() {
         React.createElement(
           "div",
           { className: "overlay-panel overlay-left" },
-          React.createElement("h1", null, "Lorem ipsum dolor sit amet consectetur."),
-          React.createElement("p", null, "Lorem ipsum dolor sit amet consectetur, adipisicing elit."),
+          React.createElement("h1", null, "Connectez-vous sur notre site"),
           React.createElement(
             "button",
             { className: "ghost", onClick: toggleForm, id: "login" },
@@ -75,8 +74,7 @@ function AuthForm() {
         React.createElement(
           "div",
           { className: "overlay-panel overlay-right" },
-          React.createElement("h1", null, "Lorem ipsum dolor sit amet consectetur."),
-          React.createElement("p", null, "Lorem ipsum dolor sit amet consectetur, adipisicing elit."),
+          React.createElement("h1", null, "Inscrivez-vous sur notre site"),
           React.createElement(
             "button",
             { className: "ghost", onClick: toggleForm, id: "signUp" },
