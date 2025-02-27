@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Log.css";
 
+
 function AuthForm() {
   const [isSignUpActive, setIsSignUpActive] = useState(false);
 
@@ -19,15 +20,9 @@ function AuthForm() {
         "form",
         { action: "#" },
         React.createElement("h1", null, "Creer un compte"),
-        React.createElement(
-          "div",
-          { className: "social-container" },
-          React.createElement("a", { href: "#" }, React.createElement("i", { className: "fab fa-facebook-f" })),
-          React.createElement("a", { href: "#" }, React.createElement("i", { className: "fab fa-google-plus-g" })),
-          React.createElement("a", { href: "#" }, React.createElement("i", { className: "fab fa-linkedin-in" }))
-        ),
-        React.createElement("span", null, "Utiliser compte gmail"),
+        React.createElement("span", null, "Crée un compte pour profiter des avantages !"),
         React.createElement("input", { type: "text", placeholder: "Nom" }),
+        React.createElement("input", { type: "text", placeholder: "Prénom" }),
         React.createElement("input", { type: "email", placeholder: "Email" }),
         React.createElement("input", { type: "password", placeholder: "Mot de passe" }),
         React.createElement("button", null, "Creer le compte")
@@ -41,14 +36,7 @@ function AuthForm() {
         "form",
         { action: "#" },
         React.createElement("h1", null, "Se connecter"),
-        React.createElement(
-          "div",
-          { className: "social-container" },
-          React.createElement("a", { href: "#" }, React.createElement("i", { className: "fab fa-facebook-f" })),
-          React.createElement("a", { href: "#" }, React.createElement("i", { className: "fab fa-google-plus-g" })),
-          React.createElement("a", { href: "#" }, React.createElement("i", { className: "fab fa-linkedin-in" }))
-        ),
-        React.createElement("span", null, "Je n'ai pas de compte"),
+        React.createElement("span", null, "Conecte-toi pour profiter des avantages !"),
         React.createElement("input", { type: "email", placeholder: "Email" }),
         React.createElement("input", { type: "password", placeholder: "Mot de passe" }),
         React.createElement("button", null, "Se connecter")
@@ -85,5 +73,6 @@ function AuthForm() {
     )
   );
 }
+
 
 export default AuthForm;

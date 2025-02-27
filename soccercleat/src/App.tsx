@@ -5,20 +5,22 @@ import NavBar from './components/NavBar/NavBar';
 import ProductList from './components/PorductList/ProductNike';
 import ProductPum from './components/PorductList/ProductPum';
 import ProductAdi from './components/PorductList/ProductAdi';
-import Logs from './components/Log/Log'
-import {Routes, Route} from "react-router-dom"
+import Logs from './components/Log/Log';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <NavBar/>
-      <Hero />
+      <NavBar />
+      
       <Routes>
-        <Route path="/login" element={<Logs/>} />
-        <Route path="/nike" element={<ProductList/>} />
-        <Route path="/adidas" element={<ProductAdi/>} />
-        <Route path="/puma" element={<ProductPum/>} />
+        {/* Hero sera affiché uniquement sur la page d'accueil */}
+        <Route path="/" element={<Hero />} />
+        <Route path="/login" element={<Logs />} />
+        <Route path="/nike" element={<ProductList />} />
+        <Route path="/adidas" element={<ProductAdi />} />
+        <Route path="/puma" element={<ProductPum />} />
       </Routes>
     </div>
   );

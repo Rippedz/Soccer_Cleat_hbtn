@@ -1,12 +1,14 @@
 .hero {
-    margin: 0;            
-    padding: 0;           
-    min-height: 100vh; 
-    width: 100%; 
-    position: absolute;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
     display: flex;
-    align-items: center; 
-    background: url('../Hero/background.png') no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url('background.png') no-repeat center center/cover;
 }
 
 .hero h2 {
