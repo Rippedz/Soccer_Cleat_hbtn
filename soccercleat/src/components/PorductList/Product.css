@@ -1,44 +1,45 @@
-.product {
-  background-color: #f6f6f6; /* Fond blanc */
-  border-radius: 10px; /* Coins légèrement arrondis */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
-  padding: 20px; /* Espace intérieur pour le contenu */
-  text-align: center; /* Centrer le contenu */
-  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition douce sur hover */
-  z-index: 1000;
-  margin-top: 500px;
-}
+  .produit {
+    background-color: #f6f6f6; /* Fond blanc */
+    border-radius: 10px; /* Coins légèrement arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 20px; /* Espace intérieur pour le contenu */
+    text-align: center; /* Centrer le contenu */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Transition douce sur hover */
+    z-index: 1000;
+    margin-top: 500px;
+  }
+  
+  .produit:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Accentue l'ombre au survol */
+  }
+  
+  .produit-image {
+    max-width: 50%; /* Image prend la largeur maximale du conteneur */
+    height: auto; /* Conserver les proportions de l'image */
+    margin-bottom: 5px; /* Espacement en dessous de l'image */
+    border-radius: 8px; /* Coins légèrement arrondis sur l'image */
+  }
+  
+  h3 {
+    font-size: 5rem; /* Taille de police pour le titre */
+    margin: 5px; /* Espacement sous le titre */
+    color: #333; /* Couleur sombre mais pas complètement noire */
+  }
+  
+  h4 {
+    resize: none;
+    font-size: 5rem; /* Taille de police pour le prix */
+    color: #666; /* Couleur gris pour un style léger */
+    margin: 5px; /* Réduit l'espace en bas du prix */
+  }
 
-.product:hover {
+.produit:hover {
   transform: translateY(-10px); /* Légère élévation au survol */
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Accentue l'ombre au survol */
 }
 
-.product-image {
-  max-width: 50%; /* Image prend la largeur maximale du conteneur */
-  height: auto; /* Conserver les proportions de l'image */
-  margin-bottom: 5px; /* Espacement en dessous de l'image */
-  border-radius: 8px; /* Coins légèrement arrondis sur l'image */
-}
-
-h3 {
-  font-size: 5rem; /* Taille de police pour le titre */
-  margin: 5px; /* Espacement sous le titre */
-  color: #333; /* Couleur sombre mais pas complètement noire */
-}
-
-p {
-  font-size: 5rem; /* Taille de police pour le prix */
-  color: #666; /* Couleur gris pour un style léger */
-  margin: 10px; /* Réduit l'espace en bas du prix */
-}
-
-.product:hover {
-  transform: translateY(-10px); /* Légère élévation au survol */
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Accentue l'ombre au survol */
-}
-
-.product-image {
+.produit-image {
   max-width: 50%; /* Image prend la largeur maximale du conteneur */
   height: auto; /* Conserver les proportions de l'image */
   margin-bottom: 5px; /* Espacement en dessous de l'image */

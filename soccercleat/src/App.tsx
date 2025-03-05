@@ -6,6 +6,7 @@ import ProductList from './components/PorductList/ProductNike';
 import ProductPum from './components/PorductList/ProductPum';
 import ProductAdi from './components/PorductList/ProductAdi';
 import Logs from './components/Log/Log';
+import ProductPage from './components/ProductPage/ProductPage';
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -13,14 +14,13 @@ function App() {
     <div className="App">
       <Header />
       <NavBar />
-      
       <Routes>
-        {/* Hero sera affiché uniquement sur la page d'accueil */}
         <Route path="/" element={<Hero />} />
         <Route path="/login" element={<Logs />} />
         <Route path="/nike" element={<ProductList />} />
         <Route path="/adidas" element={<ProductAdi />} />
         <Route path="/puma" element={<ProductPum />} />
+        <Route path="/product/:id" element={<ProductPage />} />
       </Routes>
     </div>
   );

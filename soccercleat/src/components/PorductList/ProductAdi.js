@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Product from './Product';
 import './ProductAdi.css';
 
@@ -24,14 +25,11 @@ const products = [
 
 function ProductAdi() {
   return (
-    <div className="product-Adi">
+    <div className="product-adi">
       {products.map(product => (
-        <Product 
-          key={product.id} 
-          image={product.image} 
-          name={product.name} 
-          price={product.price} 
-        />
+        <Link key={product.id} to={`/product/${product.id}`} state={product} className="product-link">
+          <Product image={product.image} name={product.name} price={product.price} />
+        </Link>
       ))}
     </div>
   );
